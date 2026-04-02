@@ -7,17 +7,19 @@
 
 
     <ImageView
+        android:id="@+id/image_view_top_image"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="center_horizontal"
         android:src="@drawable/screenshot_2026_04_01_115426" />
 
     <TextView
+        android:id="@+id/text_view_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_margin="8dp"
-        android:text="@string/shit_name" />
+        android:text="@string/real_app_name" />
 
     <RadioGroup
         android:layout_width="wrap_content"
@@ -27,18 +29,21 @@
         android:orientation="horizontal">
 
         <RadioButton
+            android:id="@+id/radio_button_male"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/shit_button_01" />
+            android:text="@string/male" />
 
         <RadioButton
+            android:id="@+id/radio_button_female"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/shit_button_02" />
+            android:text="@string/female" />
 
     </RadioGroup>
 
     <TextView
+        android:id="@+id/text_view_age_input"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -52,17 +57,20 @@
         android:layout_margin="8dp">
 
         <TextView
+            android:id="@+id/text_view_feet_input"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="@string/feet" />
 
         <TextView
+            android:id="@+id/text_view_inches_input"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="@string/inches" />
     </LinearLayout>
 
     <TextView
+        android:id="@+id/text_view_weight_input"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -70,6 +78,7 @@
         android:hint="@string/weight" />
 
     <Button
+        android:id="@+id/button_calculate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -84,11 +93,13 @@
         android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/text_view_bmi_output"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/bmi_index" />
 
         <TextView
+            android:id="@+id/text_view_message_output"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/bmi_message" />
