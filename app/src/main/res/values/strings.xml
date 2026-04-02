@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">app_01</string>
-    <string name="shit_name">some shit text</string>
+    <string name="real_app_name">BMI calculator</string>
     <string name="shit_button_01">shit bt01</string>
     <string name="shit_button_02">shit bt02</string>
     <string name="shit_button_03">shit bt03</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
     <string name="age">Age</string>
     <string name="feet">Feet</string>
     <string name="inches">Inches</string>
