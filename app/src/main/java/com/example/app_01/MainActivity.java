@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
@@ -20,10 +21,10 @@ public class MainActivity extends AppCompatActivity {
     TextView mainText;
     RadioButton maleRadio;
     RadioButton femaleRadio;
-    TextView ageInput;
-    TextView feetInput;
-    TextView inchesInput;
-    TextView weightInput;
+    EditText ageInput;
+    EditText feetInput;
+    EditText inchesInput;
+    EditText weightInput;
     Button calculateButton;
     TextView indexOutput;
     TextView messageOutput;
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         findViews();
-
+        setupClickListener();
 
     }
 
@@ -41,12 +42,34 @@ public class MainActivity extends AppCompatActivity {
         mainText = findViewById(id.text_view_name);
         maleRadio = findViewById(id.radio_button_male);
         femaleRadio = findViewById(id.radio_button_female);
-        ageInput = findViewById(id.text_view_age_input);
-        feetInput = findViewById(id.text_view_feet_input);
-        inchesInput = findViewById(id.text_view_inches_input);
-        weightInput = findViewById(id.text_view_weight_input);
+        ageInput = findViewById(id.edit_text_age_input);
+        feetInput = findViewById(id.edit_text_feet_input);
+        inchesInput = findViewById(id.edit_text_inches_input);
+        weightInput = findViewById(id.edit_text_weight_input);
         calculateButton = findViewById(id.button_calculate);
         indexOutput = findViewById(id.text_view_bmi_output);
         messageOutput = findViewById(id.text_view_message_output);
+    }
+
+    private void setupClickListener(){
+        calculateButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showToastWithText(getUserData());
+            }
+        });
+    }
+
+    private void showToastWithText(String message){
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+    }
+
+    private String getUserData(){
+        String age = ageInput.getText().toString();
+        String feet = feetInput.getText().toString();
+        String inches = inchesInput.getText().toString();
+        String weight = weightInput.getText().toString();
+
+        return age + ' ' + feet + ' ' + inches + ' ' + weight;
     }
 }
