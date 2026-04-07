@@ -21,8 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_margin="8dp"
-        android:text="@string/real_app_name"
-        />
+        android:text="@string/real_app_name" />
 
     <RadioGroup
         android:layout_width="wrap_content"
@@ -56,6 +55,7 @@
         android:inputType="number" />
 
     <RadioGroup
+        android:id="@+id/radio_group_measurement"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -75,6 +75,7 @@
             android:text="@string/feet_inches" />
 
     </RadioGroup>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -98,15 +99,21 @@
             android:inputType="number" />
     </LinearLayout>
 
-    <EditText
-        android:id="@+id/edit_text_centimeters"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_margin="8dp"
-        android:autofillHints=""
-        android:hint="@string/centimeters"
-        android:inputType="number" />
+        android:layout_margin="8dp">
+
+        <EditText
+            android:id="@+id/edit_text_centimeters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:hint="@string/centimeters"
+            android:inputType="number" />
+    </LinearLayout>
+
 
     <EditText
         android:id="@+id/edit_text_weight_input"
