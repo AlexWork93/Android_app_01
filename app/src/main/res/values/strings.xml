@@ -6,14 +6,14 @@
     <string name="shit_button_03">shit bt03</string>
     <string name="male">Male</string>
     <string name="female">Female</string>
-    <string name="centimeters">centimeters</string>
+    <string name="centimeters">Centimeters</string>
     <string name="feet_inches">feet/inches</string>
     <string name="age">Age</string>
     <string name="feet">Feet</string>
     <string name="inches">Inches</string>
     <string name="weight">Weight</string>
     <string name="calculate">CALCULATE</string>
-    <string name="bmi_index">23.6</string>
-    <string name="bmi_message">You are healthy</string>
+    <string name="bmi_index"></string>
+    <string name="bmi_message">Enter values and press CALCULATE</string>
 
 </resources>
